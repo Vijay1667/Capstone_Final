@@ -1,0 +1,30 @@
+{
+  "name": "servers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "mongo": "nodemon mongotest.js",
+    "mongo1": "nodemon mongotest.js 3001",
+    "mongo2": "nodemon mongotest.js 3002",
+    "mongo3": "nodemon mongotest.js 3003",
+    "mongo4": "nodemon mongotest.js 3004"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.454.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "form-data": "^4.0.0",
+    "mailgun.js": "^9.3.0",
+    "mongodb": "^6.2.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.0.1",
+    "socket.io": "^4.7.2"
+  }
+}

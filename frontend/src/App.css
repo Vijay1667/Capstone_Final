@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url("https://unpkg.com/aos@2.3.1/dist/aos.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+/* *{
+  cursor:url('./cursor.svg'), auto;
+} */
+.overlay{
+  font-family: "Raleway";
+  width: 100%;
+  visibility: hidden ;
+  height: 0 ;
+  /* top: 93px; */
+  /* left: 0; */
+  transition: 0.2s ease-in-out;
+  background-color: rgb(0, 0, 0,0.9);
+}
+.overlay-item{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: calc(2vw + 2vh + 2vmin);
+}
+
+.overlay-item:hover {
+  cursor:pointer;
+  color: rgb(255, 102, 0);
+  
+}
+#nav__line-1{
+  transition: all 0.4s ease;
+}
+#nav__line-2{
+  transition: all 0.4s ease;
+}
+#nav__line-3{
+  transition: all 0.4s ease;
+}
+.nav-head{
+  background-color: black;
+  color: white;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 30px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed !important;
+  z-index: 10;
+}
+.nav-button:hover{
+  cursor: pointer;
+  color: rgb(255, 102, 0);
+}
+
+.home_page{
+  margin-top: 93px;
+  width: 100%;
+}
+
+.content{
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: calc(3vw + 3vh + 2vmin);
+}
+.word-hover {
+  transition: color 0.2s ease-out;
+}
+
+.word-hover:hover {
+  cursor:grab;
+  color: rgb(255, 102, 0);
+}
+
+.content-2{
+  font-family: 'Poppins';
+  font-weight: 600;
+  
+  font-size: calc(2vw + 2vh + 1vmin);
+}
+.animm{
+  overflow: visible;
+  width: calc(10vw + 10vh + 10vmin);
+  
+  
+}
+.zoomin{
+  color: rgb(255, 102, 0);
+}
+.custom_button{
+  padding:4%;
+  background-color: rgba(0, 0, 0,0.01);
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: x-large;
+  color: rgb(255, 102, 0);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgb(255, 102, 0);
+  transition:  0.5s cubic-bezier(0.28, -0.35, 0.8, 1.5);
+}
+.custom_button:hover{
+  transform: scale(1.1);
+  background-color: rgb(255, 102, 0); 
+  color: black;
+}
+/* *{
+  cursor: none;
+  pointer-events: none !important;
+} */
+#bigCircle{
+  
+  fill: transparent;
+  stroke: black;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+			z-index: 100;
+			transform: translateX(-50%) translateY(-50%);
+  
+}
+#smallcircle{
+  position: fixed;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+			z-index: 100;
+			transform: translateX(-50%) translateY(-50%);
+  
+}
+.custom-text{
+  color: rgb(255, 102, 0);
+}
+.bg-1{
+  position:absolute;
+  overflow-x: hidden !important;
+  width: calc(10vw + 10vh + 10vmin);
+  opacity: 0.15;
+  right: 0%;
+  top: 0%;
+  /* left: 0%; */
+  background-size: cover; 
+  /* clip-path: inset(0px 50px 20px 0px) */
+}
+
+footer a{
+  text-decoration: none;
+  color: rgb(84, 84, 84);
+  transition: 0.18s ease;
+}
+footer a:hover{
+  color: rgb(255, 102, 0);
+}
+.footer-bg{
+  background-color: rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  
+  width: 100%;
+  top: 100vh;
+  bottom: calc(0%);
+}
+
+
+
+
+/* LOGIN PAGE */
+.login_page{
+  margin-top: 93px;
+  
+  padding-top: 2px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  height: calc(100vh - 93px);
+}
+.login_box{
+  font-weight: 500;
+  border: 2px solid rgb(255, 102, 0);
+  height: calc(100vh - 95px);;
+}
+.login_text{
+  font-size:xx-large;
+}
+input[type="radio"] {
+  content: "\2713";
+  appearance: none;
+  background-color: #fff;
+  
+  font-weight: 500;
+  color: rgb(255, 102, 0);
+  width: 1.35em;
+  height: 1.35em;
+  
+  border: 0.15em solid rgb(255, 102, 0);
+  
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+}
+input[type="radio"]:checked{ 
+  color: black;
+  background-color: rgb(255, 102, 0);
+
+}
+.login_svg{
+  width: calc(5vw + 5vh + 5vmin);
+  background-color: black;
+  border-radius: 60%;
+}
+
+input[type="text"]{
+  border-color: #FF6600;
+  font-weight: 500;
+  width: 70%;
+}
+input[type="datetime-local"]{
+  border-color: #FF6600;
+  font-weight: 500;
+  width: 70%;
+}
+input[type="password"]{
+  border-color: #FF6600;
+  font-weight: 500;
+  width: 70%;
+
+}
+input[type="email"]{
+  border-color: #FF6600;
+  font-weight: 500;
+  width: 70%;
+
+}
+input[type="text"]:focus{
+  outline: #FF6600  solid 2px;
+}
+input[type="password"]:focus{
+  outline: #FF6600  solid 2px;
+}
+input[type="email"]:focus{
+  outline: #FF6600  solid 2px;
+}
+.login_button{
+  width: 30%;
+  border: 2px solid #FF6600;
+  background-color: black;
+  font-weight: 500;
+  color: white;
+}
+.login_button:hover{
+  background-color: #FF6600;
+  color: white;
+  font-weight: 500;
+}
+
+/* Toast */
+.Toastify__toast {
+  background-color: #606060 !important;
+  color: white !important;
+}
+.Toastify__progress-bar {
+  background-color: #F07900 !important;
+}
+.Toastify__toast-body {
+  font-weight: 500;
+  font-family: "Poppins" !important;
+}
+.Toastify__toast-icon {
+  color: #F07900 !important;
+}
+
+.info_cards{
+  background-color: #29536e !important;
+  font-family: "Poppins";
+  font-weight: 500;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px dotted #F07900;
+  /* border: ; */
+  color: white;
+}
+.info_cards:hover{
+  transform: scale(1.1) !important;
+}
+.container{
+  overflow: hidden;
+}
+
+
+/* Error page */
+.error_page{
+  margin-top: 93px;
+  width: 100%;
+  height: calc(100vh - 93px);
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: calc(3vw + 3vh);
+  user-select: none;
+}
+.error_page a{
+  color: #FF6600;
+}
+.upload_page{
+  margin-top: 93px;
+  
+  font-family: "Poppins";
+  font-weight: 500 ;
+  
+  
+}
+.upload_files .btn{
+  background-color: rgb(223, 170, 116)
+}
+.upload_files .btn:hover{
+  background-color: #F07900;
+}
+.btn-closed{
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  background-color: #ff66006b;
+  color: white;
+  font-weight: 500;
+  box-shadow: 3px 3px #F07900;
+  color: black; 
+  padding: 0.5rem;
+  z-index: 2;
+}
+.btn-closed:active{
+  box-shadow: none;
+  transform: translate(3px,3px);
+}
+.upload_button{
+  background-color: #ff66006b;
+  color: white;
+  font-weight: 500;
+  border: 1px solid black;
+  box-shadow: 3px 3px #F07900;
+  color: black;
+}
+.upload_button:active{
+  box-shadow: none;
+  transform: translate(3px,3px);
+}
+.post_button{
+  padding: calc(0.7vw + 1vh);
+  background-color: #ff66006b;
+  color: white;
+  font-weight: 500;
+  border: 1px solid black;
+  box-shadow: 3px 3px #F07900;
+  color: black;
+}
+.post_button:hover{
+  cursor: pointer;
+}
+.post_button:active{
+  box-shadow: none;
+  transform: translate(3px,3px);
+}
+.cancel_button{
+  padding: calc(0.7vw + 1vh);
+  background-color: #ffd7b0;
+  color: white;
+  font-weight: 500;
+  border: 1px solid black;
+  box-shadow: 3px 3px #F07900 ;
+  color: black;
+}
+.cancel_button:active{
+  box-shadow: none;
+  transform: translate(3px,3px);
+}
+.each-file{
+  background-color: transparent;
+  border: 1px solid #F07900 !important;
+  box-shadow: 3px 3px  #F07900;
+  /* width: 30%; */
+  aspect-ratio: 1 / 1;
+  position: relative;
+  
+}
+.each-file:hover{
+  border: 1px solid #F07900;
+}
+input[type="file"]{
+  padding: 0.5em;
+}
+input::file-selector-button {
+  background-color: #ff66006b;
+  color: black;
+  font-weight: 500;
+  padding: 0.5em;
+  border: 1px solid black;
+  border-radius: 0.375rem;
+  box-shadow: 3px 3px  #F07900;
+}
+input::file-selector-button:active {
+  box-shadow:none;
+  transform: translate(3px,3px);
+  
+}
+
+.semantic-res{
+  box-shadow: 1px 1px  #F07900;
+}
+.exams_page{
+  font-family: "Poppins";
+  margin-top: 93px;
+  width: 100%;
+}
+.each_exam{
+  border: 2px dashed #FF6600;
+  font-weight: 500;
+  
+}
+.each_exam:hover{
+  cursor: pointer;
+}
+.prof_page{
+  font-family: "Poppins";
+  margin-top: 93px;
+  width: 100%;
+}
+.prof_page .container{
+  font-size: large;
+  font-weight: 500;
+}
+
+
+
+.add_question{
+  background-color: #ffc49c;
+  color: white;
+  font-weight: 500;
+  font-size: large;
+  border: 1px solid black;
+  box-shadow: 3px 3px #F07900;
+  color: black;
+}
+.add_question:active{
+  box-shadow: none;
+  transform: translate(3px,3px);
+}
+.ReactModal__Content{
+  margin-top: 93px;
+  
+}
+
+.add_exam_page{
+  font-family: "Poppins";
+  font-weight: 500;
+}
+.each_question{
+  border: 1px solid #F07900;
+}
