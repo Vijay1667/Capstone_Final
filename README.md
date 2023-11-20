@@ -6,8 +6,8 @@
 ```
 Configure replication in mongodb
 ```
-> mongosh --port 27011
-> rs.initiate({_id: "myReplSet", members: [ { id: 0, host: "localhost:27012" }, { id: 1, host: "localhost:27011"}]})
+> mongosh --port 27012
+> rs.initiate({_id: "myReplSet", members: [ { id: 0, host: "localhost:27012" }, { id: 1, host: "localhost:27011"}] } )
 ```
 
 #### Setting up Flask ML Model
@@ -27,4 +27,9 @@ Configure replication in mongodb
 ```
 > navigate to nginx folder
 > start nginx
+```
+### Start frondend
+```
+> cd frontend
+> npm start
 ```
