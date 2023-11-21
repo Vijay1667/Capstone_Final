@@ -1,4 +1,7 @@
-# Capstone_Final![Untitled-2023-10-17-1655](https://github.com/Vijay1667/Capstone_Final/assets/95224492/092b965c-e557-4e9c-9d2b-ab5ce54a8577)
+# Capstone Project
+# AI Scrutiny
+![software_arch](https://github.com/Vijay1667/Capstone_Final/assets/95224492/caadaa9e-83cc-4c93-8b8a-a87efe3e61b4)
+
 # Project Setup
 ```
 > mongod --port 27011 --dbpath "your 1st db path" --bind_ip 127.0.0.1 --replSet myReplSet
