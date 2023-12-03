@@ -36,3 +36,9 @@ Configure replication in mongodb
 > cd frontend
 > npm start
 ```
+## Demo
+
+
+
+https://github.com/Vijay1667/Capstone_Final/assets/95224492/1b5b0891-8ec9-4277-9055-10909cf4f489
+
